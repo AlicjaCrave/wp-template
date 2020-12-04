@@ -1,0 +1,24 @@
+{
+    "name": "gaetan/wordpress-install-template",
+    "description": "Template d'installation pour WP",
+    "authors": [
+        {
+            "name": "GaetanOclock",
+            "email": "gaetan@oclock.io"
+        }
+    ],
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org",
+            "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+        }
+    ],
+    "extra": {
+        "wordpress-install-dir": "wp"
+    },
+    "require": {
+        "johnpbloch/wordpress": "^5.5",
+        "wpackagist-theme/twentytwenty": "^1.5"
+    }
+}
